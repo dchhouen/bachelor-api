@@ -12,12 +12,23 @@ Core technologies used:
 
 ## Usage/Examples
 
-```javascript
-import Component from 'my-project'
+```python
+# Sample data for contestants
+contestants_data = [
+    {"id": 1, "first_name": "Hannah","last_name": "Brown", "age": 24, "occupation": Occupation.interior_designer},
+    {"id": 2, "first_name": "Jed","last_name": "Wyatt", "age": 25, "occupation": Occupation.singer},
+    {"id": 3, "first_name": "Tyler","last_name": "Cameron", "age": 26, "occupation": Occupation.general_contractor},
+]
 
-function App() {
-  return <Component />
-}
+Run Live server uvicorn main:app --reload
+Access endpoints at http://127.0.0.1:8000
+
+Example to get all contestants:
+http://127.0.0.1:8000/api/v1/contestants
+
+Example to get Hanna Brown information:
+http://127.0.0.1:8000/api/v1/contestants/1
+
 ```
 
 
