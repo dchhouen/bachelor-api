@@ -15,13 +15,13 @@ contestants_data = [
 async def get_all_contestants():
     return contestants_data
 
-# Route to add a constestant
+# Route to add a contestants
 @app.post("/api/v1/contestant")
 async def add_contestant(contestant_input: Contestants):
     contestants_data.append(contestant_input.model_dump())
     return {"message": "Contestants has been added"}
 
-# Route to get a specific contestant by ID
+# Route to get a specific contestants by ID
 @app.get("/api/v1/contestants/{contestant_id}")
 async def get_contestant_by_id(contestant_id: int):
     for contestant in contestants_data:
