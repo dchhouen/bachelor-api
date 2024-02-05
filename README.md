@@ -9,7 +9,15 @@ Core technologies used:
 * Postgres
 * Docker Compose
 
+## Development Information
+Atlassian Jira Kanban Board
 
+- [Jira](https://softwaredesigns.atlassian.net)
+
+In Cloud
+Atlassian Confluence Page
+
+- [Confluence](https://softwaredesigns.atlassian.net)
 ## Usage/Examples
 
 ```python
@@ -20,7 +28,8 @@ contestants_data = [
     {"id": 3, "first_name": "Tyler","last_name": "Cameron", "age": 26, "occupation": Occupation.general_contractor},
 ]
 
-Run Live server uvicorn main:app --reload
+Run Live server:
+uvicorn main:app --reload
 Access endpoints at http://127.0.0.1:8000
 
 Example to get all contestants:
