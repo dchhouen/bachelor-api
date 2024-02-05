@@ -13,7 +13,7 @@ Core technologies used:
 Atlassian Jira Kanban Board
 
 - [Jira](https://softwaredesigns.atlassian.net)
-
+ 
 In Cloud
 Atlassian Confluence Page
 
